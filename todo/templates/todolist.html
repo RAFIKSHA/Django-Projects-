@@ -50,7 +50,7 @@
                         {% for todo in all_items %}
                         <tr class="d-flex">
                             <td class="col-8">{{ todo.content }}</td>
-                            <!-- <td class="col-4 btn-group" role="group">
+                            <td class="col-4 btn-group" role="group">
                                 {% if edit_item and edit_item.id == todo.id %}
                                 <p>Editing this todo item... </p>
                                 <a href="/"> Cancel</a>
@@ -58,7 +58,7 @@
                                 <a href="/todo/{{ todo.id }}/edit" class="btn btn-primary">Edit</a>
                                 <a href="/todo/{{ todo.id }}/delete" class="btn btn-danger">Delete</a>
                                 {% endif %}
-                            </td> -->
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>

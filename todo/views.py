@@ -8,7 +8,7 @@ def TodoAppView(request):
     return render(request, 'todolist.html', {'all_items': all_items, 'ACTION_URL': '/todo/'})
 
 def AddTodo(request):
-    new_item = Item(content=request.POST['content'])
+    new_item = Item(content=request.POST['content']) 
     if request.POST['content'].strip() != '':
         new_item.save()
     return HttpResponseRedirect('/')
